@@ -11,6 +11,8 @@
 	<h1>Book Book</h1>
 	<h2>The community based text-book sharing application.</h2>
 	<br>
+	<h1>Tutor - John Sina</h1>
+	<br>
 	<h3>Group Members</h3>
 	<ul>
 		<li>Cosmo Gregurek</li>
@@ -19,7 +21,6 @@
 		<li>Nick Hickman</li>
 		<li>Nick Low</li>
 	</ul>
-	<h1>Tutor - John Sina</h1>
 </body>
 
 </html>

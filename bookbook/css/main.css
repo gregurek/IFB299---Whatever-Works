@@ -1,0 +1,75 @@
+/*
+Theme Name:		Book Book Main Theme v1.0
+Author:			Liam Dinsdale
+Date:			31/08/2015
+Description:	The main theme of the Book Book website/web-app.
+*/
+
+/* Reset */
+body, div, h1, h2, h3, h4, h5, h6, p, ul, ol, li, img, form, fieldset, input, textarea, blockquote { 
+    padding: 0;
+    border: 0;
+    margin: 0;
+}
+
+header, nav, section, article, aside, figure, figcaption, footer {
+    display: block;
+}
+
+/* Fonts */
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:400,700);
+
+/* General */
+html {
+    height: 100%;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
+    color: #303030;
+    height: 100%;
+}
+
+.wrapper {
+	width: 960px;
+	margin: auto;
+}
+
+.clearfix-spacer {
+    float: none;
+    clear: both;
+    height: 20px;
+}
+
+.spacer {
+    height: 20px;
+}
+
+/* Header */
+header {
+	margin-bottom: 20px;
+}
+
+/* Navigation */
+nav {
+	margin-bottom: 20px;
+}
+
+nav ul {
+	list-style: none;
+}
+
+nav ul li {
+	display: inline;
+	padding-left: 8px;
+}
+
+nav ul li:first-child {
+	padding-left: 0px;
+}
+
+/* Footer */
+footer {
+	margin-top: 20px;
+}

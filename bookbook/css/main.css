@@ -36,19 +36,30 @@ body {
 	margin: auto;
 }
 
-.clearfix-spacer {
+.clearfix{
     float: none;
     clear: both;
-    height: 20px;
+	height: 0px;
 }
 
 .spacer {
     height: 20px;
 }
 
+.clearfix-spacer {
+    float: none;
+    clear: both;
+    height: 20px;
+}
+
 /* Header */
 header {
 	margin-bottom: 20px;
+}
+
+/* Footer */
+footer {
+	margin-top: 20px;
 }
 
 /* Navigation */
@@ -69,7 +80,46 @@ nav ul li:first-child {
 	padding-left: 0px;
 }
 
-/* Footer */
-footer {
+/* Form */
+form {
 	margin-top: 20px;
+}
+
+form label {
+	display: block;
+	width: 180px;
+	float: left;
+	margin-top: 3px;
+	margin-bottom: 14px;
+}
+
+form input {
+	display: block;
+	float: left;
+	padding: 4px;
+	margin-bottom: 10px;
+	border: 1px solid #d9d9d9;
+}
+
+.button {
+	margin-top: 4px;
+	padding: 8px 20px 8px 20px;
+	-webkit-box-shadow: 1px 1px 5px 0px rgba(0,0,0,0.75);
+	-moz-box-shadow: 1px 1px 5px 0px rgba(0,0,0,0.75);
+	box-shadow: 1px 1px 5px 0px rgba(0,0,0,0.75);
+}
+
+/* Search Results */
+
+.results ul {
+	list-style: none;
+}
+
+.results ul li {
+	margin-top: 22px;
+	margin-bottom: 22px;
+}
+
+.results ul li ul li {
+	margin: 0px;
 }

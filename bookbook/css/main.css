@@ -109,6 +109,18 @@ form input {
 	box-shadow: 1px 1px 5px 0px rgba(0,0,0,0.75);
 }
 
+.success {
+	margin-top: 20px;
+	padding: 8px;
+	background-color: #dff0d8;
+}
+
+.error {
+	margin-top: 20px;
+	padding: 8px;
+	background-color: #f2dede;
+}
+
 /* Search Results */
 
 .results ul {

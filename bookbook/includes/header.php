@@ -28,8 +28,15 @@
 <nav>
 	<ul>
 		<li><a href='../pages/homepage.php'>Homepage</a></li>
-		<li><a href='../pages/newaccount.php'>Create Account</a></li>
 		<li><a href='../pages/searchresults.php'>Search Results</a></li>
-		<li><a href='../pages/listabook.php'>List A Book</a></li>
+		<?php
+			if(isset($_SESSION['email'])){
+				echo "<li><a href='../pages/listabook.php'>List A Book</a></li>";
+				echo "<li><a href='../pages/logout.php'>Logout</a></li>";
+			} else {
+				echo "<li><a href='../pages/newaccount.php'>Create Account</a></li>";
+				echo "<li><a href='../pages/login.php'>Login</a></li>";
+			}
+		?>
 	</ul>
 </nav>

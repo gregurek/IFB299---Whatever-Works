@@ -1,13 +1,9 @@
 <?php
 	include '../includes/header.php';
 ?>
-<style>
-h2{
-	font-size: 13px;
-}
 
-</style>
 <h1>List A Book</h1>
+</br>
 <h2>To list a textbook enter in the books Title, Author and the Edition. When submitted the book will be shown in the results page. Please check your emails daily as that is how another student will contact you.</h2>
 
 <?php

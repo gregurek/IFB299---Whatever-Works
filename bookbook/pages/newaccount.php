@@ -1,11 +1,7 @@
 <?php
 	include '../includes/header.php';
 ?>
-<style>
-h2 {
-	font-size: 13px;
-}
-</style>
+
 <h1>Create Account</h1>
 <h2>Please enter a valid Qut Email address.</h2>
 

@@ -1,8 +1,13 @@
 <?php
 	include '../includes/header.php';
 ?>
-
+<style>
+h2 {
+	font-size: 13px;
+}
+</style>
 <h1>Search Results</h1>
+<h2>Current Search results listed below, to get a book please click on the User Email button and send  them an email.</h2>
 
 <div class='results'>
 	<ul>

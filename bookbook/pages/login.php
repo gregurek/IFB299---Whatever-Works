@@ -1,14 +1,8 @@
 <?php
 	include '../includes/header.php';
 ?>
-<style>
-h2 {
-	font-size: 13px;
-}
-</style>
 
 <h1>Login</h1>
-<h2>Please enter your account details.</h2>
 
 <?php
 	if(isset($_SESSION['error'])) {

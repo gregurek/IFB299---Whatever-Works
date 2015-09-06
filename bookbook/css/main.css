@@ -10,6 +10,7 @@ body, div, h1, h2, h3, h4, h5, h6, p, ul, ol, li, img, form, fieldset, input, te
     padding: 0;
     border: 0;
     margin: 0;
+	
 }
 
 header, nav, section, article, aside, figure, figcaption, footer {
@@ -29,7 +30,9 @@ body {
     font-size: 16px;
     color: #303030;
     height: 100%;
+	
 }
+
 
 .wrapper {
 	width: 960px;
@@ -54,17 +57,24 @@ body {
 
 /* Header */
 header {
-	margin-bottom: 20px;
+	margin-bottom: 0px; 
+	background: #3366FF;
+	border-style: solid;
+    border-width: 2px;
 }
 
 /* Footer */
 footer {
 	margin-top: 20px;
+	background: #3366FF;
+	border-style: solid;
+    border-width: 3px;
 }
 
 /* Navigation */
 nav {
 	margin-bottom: 20px;
+	background: #33FFFF;
 }
 
 nav ul {
@@ -79,6 +89,9 @@ nav ul li {
 nav ul li:first-child {
 	padding-left: 0px;
 }
+
+
+
 
 /* Form */
 form {
@@ -102,11 +115,19 @@ form input {
 }
 
 .button {
-	margin-top: 4px;
-	padding: 8px 20px 8px 20px;
-	-webkit-box-shadow: 1px 1px 5px 0px rgba(0,0,0,0.75);
-	-moz-box-shadow: 1px 1px 5px 0px rgba(0,0,0,0.75);
-	box-shadow: 1px 1px 5px 0px rgba(0,0,0,0.75);
+  background: #0893f0;
+  -webkit-border-radius: 28;
+  -moz-border-radius: 28;
+  border-radius: 28px;
+  font-family: Arial;
+  color: #ffffff;
+  font-size: 20px;
+  padding: 10px 20px 10px 20px;
+  text-decoration: none;
+}
+.button:hover {
+	  background: #105e8f;
+	  text-decoration: none;
 }
 
 .success {
@@ -125,13 +146,18 @@ form input {
 
 .results ul {
 	list-style: none;
+	
 }
 
 .results ul li {
 	margin-top: 22px;
 	margin-bottom: 22px;
+	
 }
 
 .results ul li ul li {
 	margin: 0px;
+	margin-right: 500px;
+	border: 1px solid black;
+
 }

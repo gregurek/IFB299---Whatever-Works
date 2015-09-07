@@ -33,11 +33,19 @@
 		<?php
 			if(isset($_SESSION['email'])){
 				echo "<li class='clearfix'><a href='../pages/listabook.php'>List A Book</a></li>";
-				echo "<li><a href='../pages/logout.php'>Logout</a></li>";
-			} else {
-				echo "<li class='clearfix'><a href='../pages/newaccount.php'>Create Account</a></li>";
-				echo "<li><a href='../pages/login.php'>Login</a></li>";
 			}
 		?>
 	</ul>
+	<?php
+			if(isset($_SESSION['email'])){
+				echo "<ul class='rightnav'>";
+				echo "<li><a href='../pages/logout.php'>Logout</a></li>";
+				echo "</ul>";
+			} else {
+				echo "<ul class='rightnav'>";
+				echo "<li class='clearfix'><a href='../pages/newaccount.php'>Create Account</a></li>";
+				echo "<li><a href='../pages/login.php'>Login</a></li>";
+				echo "</ul>";
+			}
+		?>
 </nav>

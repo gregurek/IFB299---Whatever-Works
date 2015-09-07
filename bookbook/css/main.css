@@ -32,8 +32,9 @@ body {
 }
 
 .wrapper {
+	min-height: 100%;
 	width: 960px;
-	margin: auto;
+	margin: 0 auto -72px;
 }
 
 .clearfix{
@@ -52,12 +53,23 @@ body {
     height: 20px;
 }
 
+.push {
+	height: 72px;
+}
+
+.rightnav {
+	margin-top: -18px;
+	float: right;
+}
+
 /* Header & Footer */
 header {
 }
 
 footer {
+	margin: auto;
 	margin-top: 20px;
+	width: 960px;
 }
 
 header, footer {
@@ -69,7 +81,6 @@ header, footer {
 /* Navigation */
 nav {
 	padding: 8px;
-	margin-bottom: 20px;
 	background: #34363a;
 }
 
@@ -84,10 +95,6 @@ nav ul li {
 
 nav ul li:first-child {
 	padding-left: 0px;
-}
-
-nav ul li:last-child {
-	float: right;
 }
 
 nav ul li a:link, nav ul li a:visited {
@@ -122,20 +129,19 @@ form input {
 }
 
 .button {
-	background: #0893f0;
-	-webkit-border-radius: 28;
-	-moz-border-radius: 28;
-	border-radius: 28px;
-	font-family: Arial;
+	-webkit-border-radius: 4;
+	-moz-border-radius: 4;
+	border-radius: 4px;
 	color: #ffffff;
-	font-size: 20px;
+	background: #01457d;
 	padding: 10px 20px 10px 20px;
+	border: solid #2e6da4 1px;
 	text-decoration: none;
 }
 
 .button:hover {
-	background: #105e8f;
-	text-decoration: none;
+	text-decoration: underline;
+	background-color: #286090;
 }
 
 .success {
@@ -177,6 +183,10 @@ form input {
 }
 
 /* Main */
+
+h1 {
+	margin-top: 20px;
+}
 
 h2 {
 	font-size: 14px;

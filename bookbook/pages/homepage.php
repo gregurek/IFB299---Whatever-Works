@@ -4,7 +4,7 @@
 
 <h1>Homepage</h1>
 </br>
-<h2>Welcome to BookBook, We are a service created by QUT students to beable to share textbooks with each other. To beable to use the service please create an account with the button above. If you have a book to list please login and click the List a book Button.</h2>
+<h2>Welcome to BookBook, We are a service created by QUT students to be able to share textbooks with each other. Join us  by creating an account today!. Once a member of our site, you will have the ability to List and Search for books you need.</h2>
 
 <?php
 	include '../includes/footer.php';

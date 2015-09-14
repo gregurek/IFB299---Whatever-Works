@@ -20,7 +20,7 @@
 				<label>First Name</label><input type="text" name="firstname"></input><div class="clearfix"></div>
 				<label>Last Name</label><input type="text" name="lastname"></input><div class="clearfix"></div>
 				<label>Phone Number</label><input type="text" name="phonenumber"></input><div class="clearfix"></div>
-				<label>Address</label><input></input type="text" name="address"><div class="clearfix"></div>
+				<label>Address</label><input type="text" name="address"></input><div class="clearfix"></div>
 				<label>Profile Image</label><input type="file" name="image"></input><div class="clearfix"></div>
 				<input class="button" type="submit" name="submit" form="newaccount"><div class="clearfix"></div>
 			</form>

@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <html>
 
 <head>
@@ -22,3 +23,8 @@
 </body>
 
 </html>
+=======
+<?php
+	header('location: pages/homepage.php');
+?>
+>>>>>>> sprintPlan

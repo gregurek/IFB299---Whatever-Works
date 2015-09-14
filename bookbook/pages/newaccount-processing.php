@@ -17,17 +17,17 @@
 	$tmp = explode('.', $_FILES['image']['name']);
 	$extension = end($tmp);
 	
-	if($email=='' || $password=='' || $passwordcheck==''){
-		$_SESSION['error'] = "The QUT Email and Password fields are required.";
+	if($email=='' || $password=='' || $passwordcheck=='' || $firstname=='' || $lastname=='' || $phonenumber=='' || $address==''){
+		$_SESSION['error'] = "All fields are required.";
 		header('location:../pages/newaccount.php');
 	}elseif($password!=$passwordcheck){
 		$_SESSION['error'] = "Your passwords do not match.";
 		header('location:../pages/newaccount.php');
 	}elseif($image == ''){
 		$sql = "insert into user (email, password, firstname, lastname, phonenumber, address) values ('$email', '$password', '$firstname', '$lastname', '$phonenumber', '$address')";
-			$result = mysqli_query($connect, $sql) or die(mysqli_error($connect));
-			$_SESSION['success'] = "Account successfully created.";
-			header('location:../pages/newaccount.php');
+		$result = mysqli_query($connect, $sql) or die(mysqli_error($connect));
+		$_SESSION['success'] = "Account successfully created.";
+		header('location:../pages/newaccount.php');
 	}else{
 		if($_FILES['image']['size'] > 512000){
 			$_SESSION['error'] = "Your image exceeds the 500kB limit.";

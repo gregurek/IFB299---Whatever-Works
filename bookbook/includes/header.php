@@ -34,7 +34,7 @@
 					<li><a href='../pages/homepage.php'>Homepage</a></li>
 					<li><a href='../pages/searchresults.php'>Search Results</a></li>
 					<?php
-						if(isset($_SESSION['email'])){
+						if(isset($_SESSION['user'])){
 							echo "<li class='clearfix'><a href='../pages/listabook.php'>List A Book</a></li>";
 						}
 					?>
@@ -42,7 +42,7 @@
 				</ul>
 				
 				<?php
-					if(isset($_SESSION['email'])){
+					if(isset($_SESSION['user'])){
 						echo "<ul class='rightnav'>\n\t\t\t\t\t";
 						echo "<li><a href='../pages/logout.php'>Logout</a></li>\n\t\t\t\t";
 						echo "</ul>";

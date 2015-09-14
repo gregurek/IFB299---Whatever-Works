@@ -1,0 +1,85 @@
+Liam Dinsdale
+09284281
+
+---
+Database
+---
+
+Basic Database ERD.png
+
+This artefact is a small, but concise, representation of the
+entity relationships in our database when I first created it.
+
+Although since that point there have been additions to our database
+I have not kept the ERD up to date, as one of my team members has
+taken on that duty.
+
+I think that this diagram shows that I have a good grasp on how
+entity relationships work in a relational database, although
+due to some 'lackluster' naming choices it is not as self explainatory
+as it could be.
+
+The joining table "userbook" is used to store the information 
+link between a user, and a book they have uploaded, this information
+allows us to know who 'owns' each book uploaded to our site.
+
+
+---
+PHP
+---
+
+connect.php
+
+This artefact is a logically important PHP Include module which
+enables our web-app to connect with our database server.
+
+I have chosen to include a development version of this file as
+is evident by the inclusion of the code "mysqli_connect_error();"
+in a functional release of our product this would be ommitted, as
+it has the potential to leak sensitive information about our database
+connection.
+
+
+header.php
+
+This artefact is similar to connect.php in that is is also a PHP
+include module, although this one contains the entire 'head' section
+of our markup, including our navigation and banner.
+
+Our web-app is structured in such a way to avoid as much code duplication
+as possible, as this is both a waste of storage space (albiet on this scale
+not particularly important) and raises the potential for human error when
+updating the code in question.
+
+
+newaccount-processing.php
+
+This artefact is the code which handles new account creation, and the
+initial uploading of user profile images.
+
+Potential profile images are filtered for size and type, only allowing
+jpg, jpeg, gif, and png images with a file size lower than 500kb to
+be uploaded to our webserver.
+
+Passwords are checked against each other (to ensure that the user has
+correctly input the password they desire) and are stored as plain text
+in our database at this point. In a future story we plan to implement
+a series of password encryption technologies to secure user passwords.
+
+---
+CSS
+---
+
+main.css
+
+This artefact is the primary (and currently only) stylesheet used by our
+web app. In the future we intent to implement dedicated stylesheets for
+specific user devices when we develop attitional applications for smart
+devices.
+
+Note: Although the vast majority of the code in this document has been
+written by me, I feel it would be unfair to claim that it is entirely my
+work. At several points throughout the development of our "main.css"
+document, Cosmo Gregurek has made some key contributions, and the resulting
+code (as seen in the document today) for our Navigation, and Button styling
+is the culmination of our combined efforts.

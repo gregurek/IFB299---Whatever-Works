@@ -11,9 +11,9 @@
 	
 	$image = $_FILES['image']['name'];
 	$timestamp = date_create();
+	$newimagename = date_timestamp_get($timestamp) . '_' . $image;
 	$target = '../images/' . $newimagename;
 	$allowedexts = array('jpg', 'jpeg', 'gif', 'png');
-	$newimagename = date_timestamp_get($timestamp) . '_' . $image;
 	$tmp = explode('.', $_FILES['image']['name']);
 	$extension = end($tmp);
 	

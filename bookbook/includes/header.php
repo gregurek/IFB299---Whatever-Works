@@ -44,6 +44,7 @@
 				<?php
 					if(isset($_SESSION['user'])){
 						echo "<ul class='rightnav'>\n\t\t\t\t\t";
+						echo "<li><a href='../pages/profile.php'>Profile</a></li>\n\t\t\t\t\t";
 						echo "<li><a href='../pages/logout.php'>Logout</a></li>\n\t\t\t\t";
 						echo "</ul>";
 					} else {

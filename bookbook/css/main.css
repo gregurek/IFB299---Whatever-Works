@@ -156,6 +156,13 @@ form input {
 	background-color: #f2dede;
 }
 
+.profilepicture {
+	height: 150px;
+	width: 150px;
+	margin-top: 20px;
+	margin-bottom: -20px;
+}
+
 /* Search Results */
 
 .results ul {

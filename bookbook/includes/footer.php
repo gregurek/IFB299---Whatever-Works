@@ -1,7 +1,6 @@
 
 			<!-- Foot Banner -->
 			<div class='push'></div>
-
 		</div>
 
 		<footer>

@@ -14,9 +14,9 @@
 			?>
 
 			<form action="../pages/listabook-processing.php" method="post" id="listabook">
-				<label>Book Title:</label><input type="text" name="title"></input><div class="clearfix"></div>
-				<label>Author:</label><input type="text" name="author"></input><div class="clearfix"></div>
-				<label>Edition:</label><input type="text" name="edition"></input><div class="clearfix"></div>
+				<label>Book Title:</label><input type="text" name="title"><div class="clearfix"></div>
+				<label>Author:</label><input type="text" name="author"><div class="clearfix"></div>
+				<label>Edition:</label><input type="text" name="edition"><div class="clearfix"></div>
 				<input class="button" type="submit" name="submit" form="listabook"><div class="clearfix"></div>
 			</form>
 <?php

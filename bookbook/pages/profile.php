@@ -27,8 +27,8 @@
 				}
 				
 				echo "<form action='../pages/updatepassword-processing.php' method='post' id='updatepassword'>\n\t\t\t\t";
-				echo "<label>Password</label><input type='password' name='password'></input><div class='clearfix'></div>\n\t\t\t\t";
-				echo "<label>Re-Enter Password</label><input type='password' name='passwordcheck'></input><div class='clearfix'></div>\n\t\t\t\t";
+				echo "<label>Password</label><input type='password' name='password'><div class='clearfix'></div>\n\t\t\t\t";
+				echo "<label>Re-Enter Password</label><input type='password' name='passwordcheck'><div class='clearfix'></div>\n\t\t\t\t";
 				echo "<input class='button' type='submit' name='submit' form='updatepassword' value='Update'><div class='clearfix'></div>\n\t\t\t";
 				echo "</form>\n";
 			?>
@@ -37,10 +37,10 @@
 			<h2>Personal Information</h2>
 			<?php
 				echo "<form action='../pages/updateinfo-processing.php' method='post' id='updateinfo'>\n\t\t\t\t";
-				echo "<label>First Name</label><input type='text' name='firstname' value='$firstname'></input><div class='clearfix'></div>\n\t\t\t\t";
-				echo "<label>Last Name</label><input type='text' name='lastname' value='$lastname'></input><div class='clearfix'></div>\n\t\t\t\t";
-				echo "<label>Phone Number</label><input type='text' name='phonenumber' value='$phonenumber'></input><div class='clearfix'></div>\n\t\t\t\t";
-				echo "<label>Address</label><input type='text' name='address' value='$address'></input><div class='clearfix'></div>\n\t\t\t\t";
+				echo "<label>First Name</label><input type='text' name='firstname' value='$firstname'><div class='clearfix'></div>\n\t\t\t\t";
+				echo "<label>Last Name</label><input type='text' name='lastname' value='$lastname'><div class='clearfix'></div>\n\t\t\t\t";
+				echo "<label>Phone Number</label><input type='text' name='phonenumber' value='$phonenumber'><div class='clearfix'></div>\n\t\t\t\t";
+				echo "<label>Address</label><input type='text' name='address' value='$address'><div class='clearfix'></div>\n\t\t\t\t";
 				echo "<input class='button' type='submit' name='submit' form='updateinfo' value='Update'><div class='clearfix'></div>\n\t\t\t";
 				echo "</form>\n";
 			?>
@@ -50,7 +50,7 @@
 			<?php
 				echo "<img src='../images/$image' alt='Your profile picture.' class='profilepicture'>\n\t\t\t";
 				echo "<form action='../pages/updateimage-processing.php' method='post' id='updateimage' enctype='multipart/form-data'>\n\t\t\t\t";
-				echo "<label>Profile Image</label><input type='file' name='image'></input><div class='clearfix'></div>\n\t\t\t\t";
+				echo "<label>Profile Image</label><input type='file' name='image'><div class='clearfix'></div>\n\t\t\t\t";
 				echo "<input class='button' type='submit' name='submit' form='updateimage' value='Update'><div class='clearfix'></div>\n\t\t\t";
 				echo "</form>\n";
 			?>

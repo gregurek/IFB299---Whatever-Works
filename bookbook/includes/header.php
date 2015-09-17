@@ -32,7 +32,6 @@
 			<nav>
 				<ul>
 					<li><a href='../pages/homepage.php'>Homepage</a></li>
-					<li><a href='../pages/searchresults.php'>Search Results</a></li>
 					<?php
 						if(isset($_SESSION['user'])){
 							echo "<li class='clearfix'><a href='../pages/listabook.php'>List A Book</a></li>";

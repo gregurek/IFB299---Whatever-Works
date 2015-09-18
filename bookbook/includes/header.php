@@ -23,7 +23,7 @@
 		<div class='wrapper'>
 			<!-- Heading Banner -->
 			<header>
-				<h1><img src="https://www.qut.edu.au/qut-logo-og-200.jpg" height="52px" width="52px" align="right" alt="QUT Logo">Book Book</h1>
+				<h1><img src="https://www.qut.edu.au/qut-logo-og-200.jpg" height="52" width="52" alt="QUT Logo">Book Book</h1>
 				<p>The community based text-book sharing application.</p>
 			</header>
 			
@@ -33,7 +33,7 @@
 					<li><a href='../pages/homepage.php'>Homepage</a></li>
 					<?php
 						if(isset($_SESSION['user'])){
-							echo "<li class='clearfix'><a href='../pages/listabook.php'>List A Book</a></li>";
+							echo "<li class='clearfix'><a href='../pages/listabook.php'>List A Book</a></li>\n";
 						}
 					?>
 				</ul>

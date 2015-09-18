@@ -86,6 +86,10 @@ header, footer {
 	color: #ffffff;
 }
 
+header h1 img {
+	float: right;
+}
+
 /* Navigation */
 nav {
 	padding: 8px;

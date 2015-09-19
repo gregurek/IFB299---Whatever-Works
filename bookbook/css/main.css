@@ -232,3 +232,49 @@ h1 {
 h2 {
 	font-size: 14px;
 }
+/* Homepage container */
+#container{
+	width:700px;
+	height:500px;
+	position:relative;
+}
+
+#container .prevButton{
+	height:50px;
+	width:30px;
+	position:absolute;
+	background:url('../images/left.jpg') no-repeat;
+	cursor:pointer;
+	background-position:left top;
+	left:0
+}
+
+
+
+#container .nextButton{
+	height:50px;
+	width:30px;
+	position:absolute;
+	background:url('../images/right.jpg') no-repeat;
+	cursor:pointer;
+	background-position:right top;
+	right:0
+}
+
+#container ul{
+	width:700px;
+	height:500px;
+	list-style:none outside none;
+	position:relative;
+	overflow:hidden;
+}
+
+#container li:first-child{
+	display:list-item;
+	position:absolute;
+}
+
+#container li{
+	position:absolute;
+	display:none;
+}

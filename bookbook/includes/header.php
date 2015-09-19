@@ -23,7 +23,9 @@
 		<div class='wrapper'>
 			<!-- Heading Banner -->
 			<header>
-				<h1><img src="https://www.qut.edu.au/qut-logo-og-200.jpg" height="52" width="52" alt="QUT Logo">Book Book</h1>
+				<img src="../images/logo.png" height="52" width="52" alt="Book Book Logo" class="left">
+				<img src="https://www.qut.edu.au/qut-logo-og-200.jpg" height="52" width="52" alt="QUT Logo" class="right">
+				<h1>Book Book</h1>
 				<p>The community based text-book sharing application.</p>
 			</header>
 			

@@ -15,7 +15,6 @@
 		
 		<!-- Icons -->
 		<link rel="icon" type="image/ico" href="../images/favicon.ico">
-		<link rel="shortcut icon" href="../images/shortcuticon.ico">
 		
 		<title>Book Book - The community based text-book sharing application.</title>
 	</head>
@@ -24,7 +23,9 @@
 		<div class='wrapper'>
 			<!-- Heading Banner -->
 			<header>
-				<h1><img src="https://www.qut.edu.au/qut-logo-og-200.jpg" / style="width:52px;height:52px;" align="right">Book Book</h1>
+				<img src="../images/logo.png" height="52" width="52" alt="Book Book Logo" class="left">
+				<img src="https://www.qut.edu.au/qut-logo-og-200.jpg" height="52" width="52" alt="QUT Logo" class="right">
+				<h1>Book Book</h1>
 				<p>The community based text-book sharing application.</p>
 			</header>
 			
@@ -32,18 +33,18 @@
 			<nav>
 				<ul>
 					<li><a href='../pages/homepage.php'>Homepage</a></li>
-					<li><a href='../pages/searchresults.php'>Search Results</a></li>
+					<li><a href='../pages/guide.php'>Guide</a></li>
 					<?php
-						if(isset($_SESSION['email'])){
-							echo "<li class='clearfix'><a href='../pages/listabook.php'>List A Book</a></li>";
+						if(isset($_SESSION['user'])){
+							echo "<li class='clearfix'><a href='../pages/listabook.php'>List A Book</a></li>\n";
 						}
 					?>
-				
 				</ul>
 				
 				<?php
-					if(isset($_SESSION['email'])){
+					if(isset($_SESSION['user'])){
 						echo "<ul class='rightnav'>\n\t\t\t\t\t";
+						echo "<li><a href='../pages/profile.php'>Profile</a></li>\n\t\t\t\t\t";
 						echo "<li><a href='../pages/logout.php'>Logout</a></li>\n\t\t\t\t";
 						echo "</ul>";
 					} else {

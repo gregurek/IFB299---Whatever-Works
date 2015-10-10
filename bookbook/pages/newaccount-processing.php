@@ -24,26 +24,36 @@
 		$_SESSION['error'] = "Your passwords do not match.";
 		header('location:../pages/newaccount.php');
 	}elseif($image == ''){
-		$sql = "insert into user (email, password, firstname, lastname, phonenumber, address) values ('$email', '$password', '$firstname', '$lastname', '$phonenumber', '$address')";
-		$result = mysqli_query($connect, $sql) or die(mysqli_error($connect));
-		$_SESSION['success'] = "Account successfully created.";
-		header('location:../pages/newaccount.php');
-	}else{
-		if($_FILES['image']['size'] > 512000){
-			$_SESSION['error'] = "Your image exceeds the 500kB limit.";
-			header('location:../pages/newaccount.php');
-			exit();
-		}elseif(($_FILES['image']['type'] == 'image/jpg') || ($_FILES['image']['type'] == 'image/jpeg') || ($_FILES['image']['type'] == 'image/png') || ($_FILES['image']['type'] == 'image/gif') && in_array($extension, $allowedExts)){
-			move_uploaded_file($_FILES['image']['tmp_name'], $target);
-			$sql = "insert into user (email, password, firstname, lastname, phonenumber, address, image) values ('$email', '$password', '$firstname', '$lastname', '$phonenumber', '$address', '$newimagename')";
+		if(strstr($email, "@") == "@connect.qut.edu.au"){
+			$sql = "insert into user (email, password, firstname, lastname, phonenumber, address) values ('$email', '$password', '$firstname', '$lastname', '$phonenumber', '$address')";
 			$result = mysqli_query($connect, $sql) or die(mysqli_error($connect));
 			$_SESSION['success'] = "Account successfully created.";
 			header('location:../pages/newaccount.php');
-			exit();
 		}else{
-			$_SESSION['error'] = "Only JPG, PNG and GIF files are allowed.";
+			$_SESSION['error'] = "Please enter a valid QUT email address.";
 			header('location:../pages/newaccount.php');
-			exit();
+		}
+	}else{
+		if(strstr($email, "@") == "@connect.qut.edu.au"){
+			if($_FILES['image']['size'] > 512000){
+				$_SESSION['error'] = "Your image exceeds the 500kB limit.";
+				header('location:../pages/newaccount.php');
+				exit();
+			}elseif(($_FILES['image']['type'] == 'image/jpg') || ($_FILES['image']['type'] == 'image/jpeg') || ($_FILES['image']['type'] == 'image/png') || ($_FILES['image']['type'] == 'image/gif') && in_array($extension, $allowedExts)){
+				move_uploaded_file($_FILES['image']['tmp_name'], $target);
+				$sql = "insert into user (email, password, firstname, lastname, phonenumber, address, image) values ('$email', '$password', '$firstname', '$lastname', '$phonenumber', '$address', '$newimagename')";
+				$result = mysqli_query($connect, $sql) or die(mysqli_error($connect));
+				$_SESSION['success'] = "Account successfully created.";
+				header('location:../pages/newaccount.php');
+				exit();
+			}else{
+				$_SESSION['error'] = "Only JPG, PNG and GIF files are allowed.";
+				header('location:../pages/newaccount.php');
+				exit();
+			}
+		}else{
+			$_SESSION['error'] = "Please enter a valid QUT email address.";
+			header('location:../pages/newaccount.php');
 		}
 	}
 	mysqli_close($connect);

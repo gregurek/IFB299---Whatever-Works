@@ -13,10 +13,12 @@
 				}
 			?>
 
-			<form action="../pages/listabook-processing.php" method="post" id="listabook">
+			<form action="../pages/listabook-processing.php" method="post" id="listabook" enctype="multipart/form-data">
 				<label>Book Title:</label><input type="text" name="title"><div class="clearfix"></div>
 				<label>Author:</label><input type="text" name="author"><div class="clearfix"></div>
 				<label>Edition:</label><input type="text" name="edition"><div class="clearfix"></div>
+				<label>Condition:</label><select name="bookcondition"><option value="new">Brand New</option><option value="good">Slightly Worn</option><option value="bad">Well Worn</option></select><div class="clearfix"></div>
+				<label>Cover Image</label><input type="file" name="image"><div class="clearfix"></div>
 				<input class="button" type="submit" name="submit" form="listabook"><div class="clearfix"></div>
 			</form>
 <?php

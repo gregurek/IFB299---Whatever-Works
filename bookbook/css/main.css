@@ -137,12 +137,16 @@ form label {
 	margin-bottom: 14px;
 }
 
-form input {
+form input, form select {
 	display: block;
 	float: left;
 	padding: 4px;
 	margin-bottom: 10px;
 	border: 1px solid #d9d9d9;
+}
+
+form select {
+	width: 179px;
 }
 
 .button {

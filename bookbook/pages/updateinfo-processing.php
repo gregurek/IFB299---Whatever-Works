@@ -2,10 +2,10 @@
 	include '../includes/connect.php';
 	
 	$user = $_SESSION['user'];
-	$firstname = mysqli_real_escape_string($connect, $_POST['firstname']);;
-	$lastname = mysqli_real_escape_string($connect, $_POST['lastname']);;
-	$phonenumber = mysqli_real_escape_string($connect, $_POST['phonenumber']);;
-	$address = mysqli_real_escape_string($connect, $_POST['address']);;
+	$firstname = mysqli_real_escape_string($connect, $_POST['firstname']);
+	$lastname = mysqli_real_escape_string($connect, $_POST['lastname']);
+	$phonenumber = mysqli_real_escape_string($connect, $_POST['phonenumber']);
+	$address = mysqli_real_escape_string($connect, $_POST['address']);
 	
 	if($firstname=='' || $lastname=='' || $phonenumber=='' || $address==''){
 		$_SESSION['error'] = "All fields are required.";

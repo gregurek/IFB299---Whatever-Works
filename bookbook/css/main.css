@@ -149,6 +149,12 @@ form select {
 	width: 179px;
 }
 
+form img {
+	float: none;
+	clear: both;
+	display: block;
+}
+
 .button {
 	-webkit-border-radius: 4;
 	-moz-border-radius: 4;
@@ -236,6 +242,10 @@ form select {
 .results ul li ul li:first-child {
 	background-color: #ebebeb;
 	font-weight: bold;
+}
+
+.results ul li ul li a {
+	margin-right: 8px;
 }
 
 /* Main */

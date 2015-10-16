@@ -1,16 +1,20 @@
 <?php
 	include '../includes/header.php';
-?>
-			<h1>Search Results</h1>
-			<h2>Current Search results listed below, to get a book please click on the User Email button and send  them an email.</h2>
-
-<?php
-	$search = $_GET['search'];
 	
-	$sql = "select title, author, edition, email, book.image, bookcondition from book join userbook on book.bookid = userbook.bookid join user on userbook.userid = user.userid where title like '%$search%'";
+	$sql="select * from book inner join userbook on book.bookid=userbook.bookid where userid=" . $_SESSION['user'];
 	$result = mysqli_query($connect, $sql) or die(mysqli_error($connect));
-	$numresults = mysqli_num_rows($result);	
-?>			
+?>
+			<h1>Book Book Search</h1>
+			<?php
+				if(isset($_SESSION['error'])) {
+					echo '<p class="error">' . $_SESSION['error'] . '</p>';
+					unset($_SESSION['error']);
+				} elseif(isset($_SESSION['success'])) {
+					echo '<p class="success">' . $_SESSION['success'] . '</p>';
+					unset($_SESSION['success']);
+				}
+			?>
+			
 			<div class="results">
 				<ul>
 					<?php
@@ -22,18 +26,15 @@
 							echo "<li>" . $book['author'] . "</li>\n\t\t\t\t\t\t\t";
 							echo "<li>" . $book['edition'] . "&nbsp;</li>\n\t\t\t\t\t\t\t";
 							echo "<li>" . $book['bookcondition'] . "&nbsp;</li>\n\t\t\t\t\t\t\t";
-							echo "<li><a href='mailto:" . $book['email'] . "'>Borrow Me!</a></li>\n\t\t\t\t\t\t";
+							echo "<li><a href='mybooks-update.php?book=" . $book['bookid'] . "'>Update Information</a><a href='mybooks-delete.php?book=" . $book['bookid'] . "'>Remove Book</a></li>\n\t\t\t\t\t\t\t";
 							echo "</ul>\n\t\t\t\t\t";
 							echo "</li>\n\n\t\t\t\t\t";
 							echo "<div class='clearfix'></div>\n\n\t\t\t\t\t";
 						}
 					?>
+					
 				</ul>
 			</div>
-			
-			<div class="clearfix-spacer"></div>
-
-			<p>Returned (<span class="bold"><?php echo $numresults ?></span>) Result(s) for your search of '<span class="bold"><?php echo $search ?></span>'.</p>
 <?php
 	include '../includes/footer.php';
 ?>

@@ -1,0 +1,52 @@
+----------------
+Artefact 1: Guide Image 1-5
+----------------
+
+These are the images used in the user guide slideshow.
+
+Cosmo Gregurek coded the guide in Javascript, and JQuery, and used screenshots in the slideshow initally; I updated these images with smaller, clearer, and more concise images.
+
+
+
+
+----------------
+Artefact 2: listabook.php
+----------------
+
+Listabook.php is the PHP file for the List a Book webpage, and contains a simple form that allows a user to register their text book as available for borrowing.
+
+
+
+
+----------------
+Artefact 3: listabook-processing.php
+----------------
+
+Listabook-processing.php is the PHP file that processing the validation, and database input attatched to the List a Book webpage.
+
+
+
+
+----------------
+Artefact 4: profile.php
+----------------
+
+Profile.php is a simple form that retrieves a user's data from the database and displays it, buttons on the page allow users to update their information if they want to.
+
+
+
+
+----------------
+Artefact 5: updateimage-processing.php
+----------------
+
+Updateimage-processing.php is the PHP file assocated with updating a user's profile image with the one added on the user's profile.php page.
+
+
+
+
+----------------
+Artefact 6: updateinfo-processing.php
+----------------
+
+Updateinfo-processing.php is the PHP file associated with updating a user's non-image information with any changes made on the profile.php page.
